@@ -33,7 +33,7 @@ matrix_t multiproc_mul(matrix_t *m_p0, matrix_t *m_p1, unsigned char proc_num) {
                 exit(EXIT_FAILURE);
             case 0:
                 __close(pipe_fd[0]); // Close child receiving pipe.
-                child_meta.proc_index = i; // Save PID
+                child_meta.proc_index = i; // Save PID.
                 child_handler(m_p0, m_p1, child_meta); // Close child handler.
                 __close(pipe_fd[1]); // Close transmission pipe.
                 exit(EXIT_SUCCESS); // Terminate child process.

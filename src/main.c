@@ -8,7 +8,7 @@
 #include <string.h>
 #include "colors.h"
 #include "matrix.h"
-#include "mproc_matrix.h"
+#include "matrix_mmul.h"
 
 #define E_ARGS RED"Invalid numbers of arguments\n"RESET
 #define E_MN RED"m0 != n1\n"RESET
